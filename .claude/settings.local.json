@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(lark-task)",
+      "Bash(lark-cli auth *)",
+      "Bash(lark-cli task *)"
+    ]
+  }
+}

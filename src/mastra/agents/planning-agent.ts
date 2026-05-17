@@ -1,5 +1,10 @@
 import { Agent } from '@mastra/core/agent'
-import { openai } from '@ai-sdk/openai'
+import { createOpenAI } from '@ai-sdk/openai'
+
+const openai = createOpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
+  baseURL: process.env.OPENAI_BASE_URL || 'https://api.openai.com/v1',
+})
 
 export const planningAgent = new Agent({
   name: 'Dayflow Planning Agent',

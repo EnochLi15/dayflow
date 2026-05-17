@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import 'dotenv/config'
 import { mastra } from './mastra/index.js'
 
 async function main() {
