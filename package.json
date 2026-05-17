@@ -1,0 +1,29 @@
+{
+  "name": "dayflow",
+  "version": "0.1.0",
+  "description": "AI-powered daily planning assistant",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "dayflow": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "tsc && mastra build",
+    "dayflow": "tsx src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mastra/core": "^0.10.0",
+    "@ai-sdk/openai": "^1.3.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0",
+    "tsx": "^4.19.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
